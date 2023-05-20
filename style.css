@@ -396,27 +396,64 @@ hr {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .main-content {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.main-content button {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(155, 77, 228, 0.818);
-    margin: 0px 10px;
-    transition: all 0.4s ease;
-} */
-
-/* rgba(155, 77, 228, 0.818) */
-
 .main-content button:hover {
     background-color: rgba(155, 77, 228, 0.916);
     color: rgb(239, 237, 237);
+}
+
+.faq-outer {
+    background-color: #32323216;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+.faq-outer > p {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.faq-container {
+    width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #5c5c5c16;
+    height: auto;
+}
+
+.accordian-wrapper {
+    background-color: #8a8b8b22;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.faq-container > .active {
+    transition: all 0.2s;
+    background-color: #2d2d2d60;
+}
+
+.accordian-wrapper > .accordian-question {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.accordian-wrapper > .accordian-answer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.hide {
+    transition: all 0.7s ease;
+    display: none;
 }
 
 /*Responsive Mobile*/
@@ -561,11 +598,18 @@ hr {
         font-size: 13px;
     }
 
-    /* .main-container-img {
-        height: 250px;
+    .faq-container {
+        width: 350px;
     }
 
-    .main-container-img p {
-        font-size: 35px;
-    } */
+    .faq-outer > p {
+        font-size: 15px;
+    }
+
+    .accordian-wrapper > .accordian-question{
+        font-size: 13px;
+    }
+    .accordian-wrapper > .accordian-answer{
+        font-size: 12px;
+    }
 }
