@@ -17,7 +17,6 @@ function expand(element) {
         setTimeout(() => {
             answerDiv.classList.toggle('hide');
         }, 100);
-        console.log('clicked an opened accordian');
     }
     else {
         answerDiv.classList.toggle('hide');
@@ -37,6 +36,5 @@ function expand(element) {
                 }, 100);
             }
         }
-        console.log('clicked a closed accordian')
     }
 }

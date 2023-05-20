@@ -401,6 +401,65 @@ hr {
     color: rgb(239, 237, 237);
 }
 
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.rating-container .rating-container-title {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: bold;
+}
+
+.rating {
+    width: 800px;
+}
+
+.rating > .rating-cards {
+    background-color: #d7d7d7;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    margin: 10px;
+    height: auto;
+}
+
+.rating > .rating-cards > .profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.rating > .rating-cards > .profile-img > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.rating > .rating-cards > .profile-info {
+    padding: 5px;
+}
+
+.rating > .rating-cards > .profile-info > .profile-name {
+    font-family: 'DM Sans Sans', sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.rating-cards .stars {
+    color: rgb(206, 154, 21);
+}
+
+.rating-cards .profile-comment {
+    padding: 10px 0px 0px 0px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
 .faq-outer {
     background-color: #32323216;
     padding-top: 20px;
@@ -610,6 +669,33 @@ hr {
         font-size: 13px;
     }
     .accordian-wrapper > .accordian-answer{
+        font-size: 12px;
+    }
+
+    .rating-container .rating-container-title {
+        font-size: 14px;
+    }
+
+    .rating {
+        width: 374px;
+        background-color: #e3e3e3;
+    }
+
+    .rating > .rating-cards > .profile-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .rating > .rating-cards > .profile-img > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rating-cards .profile-comment {
+        font-size: 12px;
+    }
+
+    .rating > .rating-cards > .profile-info > .profile-name {
         font-size: 12px;
     }
 }
